@@ -1,14 +1,16 @@
-# Document Management System Frontend
+# Trusted Loan Network
 
-A modern React.js-based frontend for a Document Management System featuring a feedback form, footer section, and an interactive chatbot.
+A modern React.js-based website for Trusted Loan Network - a professional loan agency platform featuring loan applications, agent listings, and client feedback.
 
 ## Features
 
-- Responsive feedback form with validation
-- Modern footer with contact information and social media links
-- Interactive chatbot with basic conversation capabilities
-- Responsive design using Tailwind CSS
-- Smooth animations and transitions
+- **Responsive Design**: Modern UI/UX with Tailwind CSS
+- **Loan Applications**: Interactive forms for Personal, Business, and Doctors loans
+- **Agent Directory**: Searchable list of loan specialists with contact information
+- **Client Feedback**: Feedback form with client testimonials carousel
+- **User Authentication**: Login and signup pages
+- **Interactive Elements**: Hover animations, carousels, and smooth transitions
+- **Professional Layout**: Header with navigation, hero section, and footer
 
 ## Prerequisites
 
@@ -19,8 +21,8 @@ A modern React.js-based frontend for a Document Management System featuring a fe
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd dms-frontend
+git clone https://github.com/vmganancial/trusted-loan-network.git
+cd trusted-loan-network
 ```
 
 2. Install dependencies:
@@ -40,8 +42,18 @@ The application will be available at `http://localhost:3000`.
 ```
 src/
   ├── components/
-  │   ├── FeedbackForm.js
+  │   ├── Header.js
+  │   ├── Hero.js
+  │   ├── LoanOptions.js
+  │   ├── AboutUs.js
+  │   ├── Team.js
+  │   ├── FeedbackSection.js
   │   ├── Footer.js
+  │   ├── LoanEligibilityForm.js
+  │   ├── LoginPage.js
+  │   ├── SignupPage.js
+  │   ├── AgentList.js
+  │   ├── ProfileIcon.js
   │   └── ChatBot.js
   ├── App.js
   ├── App.css
@@ -50,10 +62,17 @@ src/
 
 ## Technologies Used
 
-- React.js
-- Tailwind CSS
-- React Icons
-- React Chatbot Kit
+- **React.js** - Frontend framework
+- **React Router** - Navigation and routing
+- **Tailwind CSS** - Styling and responsive design
+- **React Icons** - Icon library
+- **React Slick** - Carousel components
+
+## Loan Types
+
+- **Personal Loan**: A non-collateral and no co-maker cash loan for salaried individuals
+- **Business Loan**: Without collateral installment loan for business owners  
+- **Doctors Loan**: A multi-purpose loan for medical practitioners
 
 ## Customization
 
@@ -61,9 +80,6 @@ src/
 The main colors can be customized in the `tailwind.config.js` file:
 - Primary color: #0056b3 (blue)
 - Secondary color: #4CAF50 (green)
-
-### Chatbot Responses
-To modify the chatbot responses, edit the `getBotResponse` function in `src/components/ChatBot.js`.
 
 ## Contributing
 
@@ -75,4 +91,4 @@ To modify the chatbot responses, edit the `getBotResponse` function in `src/comp
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
